@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .header,
@@ -26,7 +27,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header-bottom{
@@ -67,4 +67,74 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+#second-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+   
+}
+#second-part .title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#second-part .image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#second-part .content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+#second-part .block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#third-part{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    align-items: center;
+    
+    background-color: rgb(231, 229, 229);
+}
+
+#third-part .text{
+    text-align: justify;
+    max-width: 750px;
+}
+
+#third-part .author{
+
+    min-width: 750px;
+    align-self: center;
+    text-align: right;
+    
+}
+
+#fourth-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+#fourth-part .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(112, 112, 250);
+    padding: 45px;
+    min-width: 500px;
 }
