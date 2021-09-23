@@ -8,12 +8,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    
 }
 
 .header,
 .footer{
-    background-color: blue;
+    background-color: #1F2937;
     color: rgb(245, 245, 245);
 }
 
@@ -27,6 +27,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #171f2a;
+    position: sticky;
+    top: 0;
+    height: 75px;
+
+
 }
 
 .header-bottom{
@@ -39,16 +45,45 @@ body{
 .header-bottom-text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 25px;
     gap:25px;
     max-width: 750px;
 }
 
+.header-bottom .header-bottom-image{
+    max-width: 650px;
+    margin: 45px;
+    border-radius: 30px;
+    box-shadow: 6px 8px #171f2a;
+    
+}
+.header-bottom .main-content{
+    gap: 75px;
+}
 
 .header-bottom-text button{
     width: 200px;
 }
 
+.header-bottom .signup-button{
+    align-self:flex-end;
+    border-radius: 20px;
+    background-color: rgb(207, 145, 82);
+    padding: 12px;
+    width: max-content;
+    border: none;
+    box-shadow: 3px 4px #171f2a;
+}
+.header-bottom .button-text{
+    color: white;
+
+}
+
+.header-bottom .main-content{
+    display: flex;
+    padding: 20px;
+}
 
 .right-links ul{
     display: flex;
@@ -56,9 +91,35 @@ body{
     list-style: none;
     padding: 10px;
     gap: 25px;
+    
 }
-.left-logo{
-    margin: 15px;
+.right-links .list-element{
+    padding: 8px;
+    box-shadow: 3px 4px #0d1218;
+    background-color: rgb(207, 145, 82, 0.9);
+    border-radius: 70px;
+   
+
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+
+.page-logo{
+    max-width: 100px;
+    margin: -15px;
+    margin-left: 70px;
+    padding: 0px;
 }
 
 
@@ -99,6 +160,17 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+
+#second-part .image .alpaca-image{
+    max-width: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 7px #171f2aca;
+    margin: 40px;
+    margin-bottom: -2px;
+    padding: -5px;
+
+}
+
 
 #third-part{
     display: flex;
