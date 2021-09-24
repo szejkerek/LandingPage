@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
 body{
     display: flex;
     flex-direction: column;
@@ -8,13 +10,23 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 1;
     
 }
 
-.header,
-.footer{
+.header{
+
     background-color: #1F2937;
     color: rgb(245, 245, 245);
+}
+
+.footer{
+    background-color: #171f2a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-top a 
@@ -24,6 +36,7 @@ body{
 }
 
 .header-top{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +44,7 @@ body{
     position: sticky;
     top: 0;
     height: 75px;
-
+    gap: 50px;
 
 }
 
@@ -40,16 +53,36 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 30px;
+
 }
 
 .header-bottom-text{
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     margin: 25px;
-    gap:25px;
+    gap:15px;
     max-width: 750px;
+    flex-shrink: 0;
 }
+
+.header-bottom-text .first-title{
+
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+
+.header-bottom-text .first-paragraph{
+
+    text-align: justify;
+    font-size: 22px;
+    line-height: 42px;
+
+}
+
 
 .header-bottom .header-bottom-image{
     max-width: 650px;
@@ -57,9 +90,11 @@ body{
     border-radius: 30px;
     box-shadow: 6px 8px #171f2a;
     
+    
 }
 .header-bottom .main-content{
-    gap: 75px;
+    gap: 40px;
+    flex-shrink: 0;
 }
 
 .header-bottom-text button{
@@ -77,6 +112,8 @@ body{
 }
 .header-bottom .button-text{
     color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -91,6 +128,7 @@ body{
     list-style: none;
     padding: 10px;
     gap: 25px;
+    font-family: 'Roboto', sans-serif;
     
 }
 .right-links .list-element{
@@ -98,6 +136,8 @@ body{
     box-shadow: 3px 4px #0d1218;
     background-color: rgb(207, 145, 82, 0.9);
     border-radius: 70px;
+    flex-shrink: 0;
+    box-shadow: rgb(98, 98, 98) 1px 1px;
    
 
 }
@@ -106,6 +146,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
+    
 }
 
 .logo-text{
@@ -127,19 +169,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 55px;
 }
 
 #second-part{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 40px;
+    align-items: center;
+    padding: 65px;
    
 }
 #second-part .title{
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
 }
 
 #second-part .image{
@@ -151,14 +196,24 @@ body{
 #second-part .content{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 220px;
     
 }
 
 #second-part .block{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+#second-part .block .subtext{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 285px;
+    min-height: 150px;
+    color: rgba(0, 0, 0, 0.329);
 }
 
 #second-part .image .alpaca-image{
@@ -179,17 +234,23 @@ body{
     padding: 40px;
     align-items: center;
     
-    background-color: rgb(231, 229, 229);
+    background-color: #E5E7EB;
 }
 
 #third-part .text{
     text-align: justify;
-    max-width: 750px;
+    font-size: 22px;
+    max-width: 900px;
+    font-family: 'Open Sans';
+    line-height: 46px;
 }
 
 #third-part .author{
 
-    min-width: 750px;
+    font-family: 'Open Sans';
+
+    font-size: 32px;
+    min-width: 850px;
     align-self: center;
     text-align: right;
     
@@ -207,6 +268,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(112, 112, 250);
+    background-color: #1F2937;
     border-radius: 10px;
     padding: 45px;
     min-width: 500px;
@@ -215,7 +277,28 @@ body{
 
 #fourth-part .text{
     display: flex;
+    font-family: 'Roboto', sans-serif;
     flex-direction: column;
     color: white;
     gap: 15px;
+}
+
+#fourth-part button{
+    border-radius: 12px;
+    min-width: 130px;
+    background-color: #1F2937;
+    padding: 12px;
+    width: max-content;
+    border: none;
+    border: solid 3px white;
+}
+#fourth-part button .text{
+  color: white;
+  font-weight: 500;
+
+}
+
+.footer .github{
+    text-decoration: none;
+    color: white;
 }
