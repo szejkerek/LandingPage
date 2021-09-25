@@ -80,6 +80,7 @@ body{
     text-align: justify;
     font-size: 22px;
     line-height: 42px;
+    margin-bottom: -20px;
 
 }
 
@@ -249,8 +250,8 @@ body{
 
     font-family: 'Open Sans';
 
-    font-size: 32px;
-    min-width: 850px;
+    font-size: 26px;
+    min-width: 900px;
     align-self: center;
     text-align: right;
     
